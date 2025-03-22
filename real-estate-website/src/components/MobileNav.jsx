@@ -1,18 +1,13 @@
 import React, { useEffect } from 'react'
 import { assets } from '../assets/assets'
 
-const MobileNav = ({ mobilemenu }) => {
+const MobileNav = ({ mobilemenu, setmobilemenu }) => {
     const closeMobileMenu = () => {
-        mobilemenu(false);
+        setmobilemenu(false);
     }
 
     useEffect(() => {
-        if (mobilemenu) {
-            document.body.style.overflow = 'hidden'
-        }
-        else {
-            document.body.style.overflow = 'auto'
-        }
+        mobilemenu ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
 
         return () => {
             document.body.style.overflow = 'auto';

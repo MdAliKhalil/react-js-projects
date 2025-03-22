@@ -25,7 +25,7 @@ const Navbar = () => {
 
             {/* ----- mobile menu ----- */}
             {
-                mobilemenu ? <MobileNav mobilemenu={setMobileMenu} /> : null
+                mobilemenu ? <MobileNav mobilemenu={mobilemenu} setmobilemenu={setMobileMenu} /> : null
             }
         </div>
     )
