@@ -4,8 +4,8 @@ import { assets } from '../assets/assets';
 const About = () => {
     return (
         <div id='about' className='container flex flex-col justify-center items-center w-full overflow-hidden mx-auto p-14 md:px-20 lg:px-32'>
-            <h2 className='text-2xl sm:text-4xl font-bold mb-2'>About <span className='text-blue-600 underline underline-offset-4 decoration-1 under font-light'>Our Brand</span></h2>
-            <p className='text-gray-500 max-w-80 text-center mb-8'>Passionate About Properties, Dedicated to Your Vision.</p>
+            <h2 className='text-2xl sm:text-4xl font-bold mb-2'>About <span className='underline underline-offset-4 decoration-1 under font-light'>Our Brand</span></h2>
+            <p className='text-gray-500 max-w-80 text-center mb-8'>Passionate About Properties, Dedicated to Your Vision</p>
             <div className='flex flex-col md:flex-row items-center md:items-start md:gap-20'>
                 <img src={assets.brand_img} alt="Brand Image" className='w-full sm:w-1/2 max-w-lg' />
                 <div className='flex flex-col items-center md:items-start mt-10 text-gray-600'>
