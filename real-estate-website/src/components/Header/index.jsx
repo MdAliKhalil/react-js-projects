@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from './Navbar'
-import { assets } from '../assets/assets'
+import Navbar from './Navbar/index';
+import { assets } from '../../assets/assets'
 
 const Header = () => {
     return (
