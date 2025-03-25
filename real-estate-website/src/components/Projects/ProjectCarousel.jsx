@@ -34,7 +34,7 @@ const ProjectCarousel = () => {
                 <button onClick={nextProject} className='bg-gray-200 p-3 rounded' aria-label='Next Arrow'><img src={assets.right_arrow} alt="Next Arrow" /></button>
             </div>
             <div className='overflow-hidden'>
-                <div className='flex flex-row gap-8 transition-transform duration-500 ease-in-out' style={{ transform: `translateX(-${(currentIndex * 100) / cardsToShow}%)` }}>
+                <div className='flex flex-row gap-0 md:gap-8 transition-transform duration-500 ease-in-out' style={{ transform: `translateX(-${(currentIndex * 100) / cardsToShow}%)` }}>
                     {
                         projectsData.map((project, index) => (
                             <div key={index} className='relative flex-shrink-0 w-full sm:w-1/4'>
