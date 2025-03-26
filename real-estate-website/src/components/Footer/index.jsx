@@ -1,10 +1,17 @@
 import React from 'react'
-import { assets } from '../../assets/assets';
-import NewsletterForm from './NewsletterForm';
+import { motion } from 'framer-motion'
+import { assets } from '../../assets/assets'
+import NewsletterForm from './NewsletterForm'
 
 const Footer = () => {
     return (
-        <div id='footer' className='container flex flex-col pt-10 px-4 md:px-20 lg:px-32 w-full bg-gray-900 overflow-hidden'>
+        <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            transition={{ duration: 1 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+
+            id='footer' className='container flex flex-col pt-10 px-4 md:px-20 lg:px-32 w-full bg-gray-900 overflow-hidden'>
             <div className='container flex flex-col md:flex-row justify-between items-start mx-auto w-full overflow-hidden'>
                 <div className='w-full md:w-1/3 mb-8 md:mb-0'>
                     <img src={assets.logo_dark} alt="Logo" />
@@ -30,7 +37,7 @@ const Footer = () => {
             <div className='border-t border-gray-700 py-4 mt-10 text-center text-gray-500'>
                 Copyright 2025 © Real Estate Project. All Rights Reserved.
             </div>
-        </div>
+        </motion.div>
     )
 }
 

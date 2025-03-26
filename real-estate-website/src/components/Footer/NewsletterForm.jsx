@@ -1,6 +1,5 @@
-import React from 'react';
-import { useState } from 'react';
-import { toast } from 'react-toastify';
+import React, { useState } from 'react'
+import { toast } from 'react-toastify'
 
 const NewsletterForm = () => {
     const [result, setResult] = useState("");

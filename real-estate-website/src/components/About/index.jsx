@@ -1,9 +1,16 @@
 import React from 'react'
-import { assets } from '../../assets/assets';
+import { motion } from 'framer-motion'
+import { assets } from '../../assets/assets'
 
 const About = () => {
     return (
-        <div id='about' className='container flex flex-col justify-center items-center w-full overflow-hidden mx-auto p-14 md:px-20 lg:px-32'>
+        <motion.div
+            initial={{ opacity: 0, x: 200 }}
+            transition={{ duration: 1 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+
+            id='about' className='container flex flex-col justify-center items-center w-full overflow-hidden mx-auto p-14 md:px-20 lg:px-32'>
             <h2 className='text-2xl sm:text-4xl font-bold mb-2'>About <span className='underline underline-offset-4 decoration-1 under font-light'>Our Brand</span></h2>
             <p className='text-gray-500 max-w-80 text-center mb-8'>Passionate About Properties, Dedicated to Your Vision</p>
             <div className='flex flex-col md:flex-row items-center md:items-start md:gap-20'>
@@ -28,10 +35,10 @@ const About = () => {
                         </div>
                     </div>
                     <p className='my-10 max-w-lg text-left'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ex neque exercitationem labore quia nemo ut inventore voluptatibus nostrum atque consequatur, ipsum autem possimus. Impedit corporis reprehenderit tempore sint culpa.</p>
-                    <button className='bg-blue-600 text-white px-8 py-2 rounded'>Learn More</button>
+                    <a href='#contact' className='bg-blue-600 text-white px-8 py-2 rounded'>Learn More</a>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

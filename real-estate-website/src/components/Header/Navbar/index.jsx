@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { assets } from '../../../assets/assets';
-import MobileNav from './MobileNav';
+import { assets } from '../../../assets/assets'
+import MobileNav from './MobileNav'
 
 const Navbar = () => {
     const [mobilemenu, setMobileMenu] = useState(false);
