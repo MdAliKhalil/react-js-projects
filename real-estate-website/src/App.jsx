@@ -1,7 +1,8 @@
 import React from "react";
-import Header from "./components/Header/index";
-import About from "./components/About/index";
-import Projects from "./components/Projects/index";
+import Header from "./components/Header";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Testimonials from "./components/Testimonials";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Header />
       <About />
       <Projects />
+      <Testimonials />
     </div>
   );
 }
